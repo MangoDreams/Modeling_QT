@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>597</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Character Animation</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="GLWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>351</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>170</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X-Rotate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>230</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y-Rotate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>290</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Z-Rotate</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>387</x>
+      <y>10</y>
+      <width>191</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>View Mesh</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>Root</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Chest</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Waist</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neck</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Hip</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Leg</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Knee</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Foot</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left Hip</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left Leg</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left Knee</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left Foot</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right CollarBone</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Shoulder</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Right Elbow</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left CollarBone</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left Shoulder</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Left Elbow</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="X_slider">
+       <property name="minimum">
+        <number>-180</number>
+       </property>
+       <property name="maximum">
+        <number>180</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="Y_Slider">
+       <property name="minimum">
+        <number>-180</number>
+       </property>
+       <property name="maximum">
+        <number>180</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="Z_slider">
+       <property name="minimum">
+        <number>-180</number>
+       </property>
+       <property name="maximum">
+        <number>180</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>pushButton</zorder>
+    <zorder>comboBox</zorder>
+    <zorder>Z_slider</zorder>
+    <zorder>X_slider</zorder>
+    <zorder>Y_Slider</zorder>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>widget</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
